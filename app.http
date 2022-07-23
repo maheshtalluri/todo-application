@@ -1,0 +1,28 @@
+GET http://localhost:3000/todos/?priority=HIGH&status=IN%20PROGRESS
+###
+
+GET http://localhost:3000/todos/6/
+###
+
+POST http://localhost:3000/todos/
+Content-Type: application/json
+
+{
+    "id": 6,
+    "todo": "NodeJS",
+    "priority": "HIGH",
+    "status": "IN PROGRESS"
+}
+
+###
+
+PUT http://localhost:3000/todos/4/
+Content-Type: application/json
+
+{
+    "priority": "LOW"
+}
+
+###
+
+DELETE http://localhost:3000/todos/6/
